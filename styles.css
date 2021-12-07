@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@media(min-width: 300px){
+    .menu{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        gap: 5vw;
+    }
+}
+
+@media(min-width: 700px){
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5vw;
+    }
+}
+
+@media(min-width: 1050px){
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5vw;
+    }
+}
+
+@media(min-width: 1450px){
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5vw;
+    }
+}
+body{
+    background-color: whitesmoke;
+}
+
+/* NAVBAR */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand{
+    color:black !important;
+    font-size: large;
+    font-weight: bold;
+}
+.navbar{
+    box-shadow: 0px 1px 5px rgb(168, 168, 168);
+}
+.nav-link{
+    transition: all 0.35s ease-in;
+    padding: 0px 25px !important;
+    font-size: 18px;
+}
+.nav-link:hover{
+    color: rgb(124, 49, 49) !important;
+}
+
+/* MAIN */
+
+.main{
+    margin: 80px 0px;
+}
+.main h1{
+    text-align: center;
+    font-weight: bold;
+}
+.main .subtitle{
+    text-align: center;
+}
+.carousel-item {
+    height: 30vw;
+}
+.carousel-caption h5 {
+    background-color: rgb(27, 14, 2, 0.7);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.menu{
+    margin: 5vw;
+    margin-top: 40px;
+}
+.menu-item-card {
+    box-shadow: 12px 12px 2px 1px rgba(59, 39, 16, 0.2);
+    border-radius: 20px;
+    min-width: 280px;
+    max-width: 350px;
+    height:500px;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.menu-item-card img{
+    border: none;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card-description {
+    font-size: 14px;
+}
+
+.card-price {
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1
+}
+
+.card-purchaseRow {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-buyButton {
+    background-color: #B77E4B;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-buyButton:hover {
+    background-color: #8f623a;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.range-container {
+    padding-top: 10px;
+}
+
+.form-label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%;
+    padding: 1vw;
+    height: 200px;
+    align-items: center;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    background-color: rgb(34, 12, 12);
+}
+footer div{
+text-align: center;
+}
+footer img{
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+}

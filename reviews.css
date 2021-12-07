@@ -1,0 +1,39 @@
+@media(max-width: 900px){
+    .reviews{
+        grid-template-columns: 1fr;
+    }
+    .reviews div:nth-child(even){
+        border-bottom: 2px dashed rgb(204, 201, 201);
+    }
+}
+
+@media(min-width: 900px){
+    .reviews{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+body{
+    background-image: url(./images/bg.jpg);
+}
+
+.reviews {
+    display: grid;
+    text-align: center;
+    padding: 3vw;
+}
+.review {
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    margin: 3vw;
+}
+.reviews img{
+    width: 400px;
+    height: 250px;
+    padding: 1vw;
+    margin: 3vw;
+    border-radius: 20px;
+    border: 1px solid rgba(32, 32, 32, 0.2);
+    box-shadow: 5px 5px 5px 2px rgba(32, 32, 32, 0.2);
+}

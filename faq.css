@@ -1,0 +1,36 @@
+@media(max-width: 800px){
+    .questions{
+        grid-template-columns: 1fr;
+    }
+}
+@media(min-width: 800px){
+    .questions{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 1200px){
+    .questions{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.questions{
+    display: grid;
+    gap: 2vw;
+}
+
+.btn{
+    width: 100%;
+    color:white;
+    padding: 20px;
+    background-color: #B77E4B !important;
+}
+.btn:hover{
+    color:white!important;
+    background-color: #8f6138 !important;
+}
+.card-body{
+   border: 2px solid #d3bfae;
+   margin-bottom: 10px;
+}

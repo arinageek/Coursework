@@ -1,0 +1,23 @@
+
+@media(max-width: 1140px){
+    .contacts div{
+        flex-basis: 100%;
+        justify-content: center;
+    }
+}
+
+@media(min-width: 1140px){
+    .contacts div{
+        flex-basis: 40%;
+    }
+}
+
+.contacts{
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+iframe{
+    width: 100% !important;
+}
